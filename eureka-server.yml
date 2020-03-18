@@ -1,3 +1,6 @@
+server:
+  port: 9102
+
 spring:
   application:
     name: eureka-server
