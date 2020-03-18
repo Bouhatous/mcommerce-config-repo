@@ -10,3 +10,4 @@ eureka:
     fetchRegistry: false
   instance:
     hostname: localhost
+    secure-port-enabled: true
