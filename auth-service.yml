@@ -1,6 +1,9 @@
 spring:
   application:
     name: auth-service
+  cloud:
+    config:
+      overrideNone: true
 
 server:
   port: 8091
@@ -9,3 +12,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+     
