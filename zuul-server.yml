@@ -15,7 +15,13 @@ ribbon:
 
 zuul:
   routes:
-
+  
+    auth-service:
+      path: /auth/**
+      service-id: auth-service
+      strip-prefix: false
+      sensitiveHeaders: Cookie, Set-Cookie, Authorization
+      
     users-service:
       path: /users/**
       service-id: users-service
