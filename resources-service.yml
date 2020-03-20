@@ -1,3 +1,5 @@
+server:
+  port: 8101
 spring:
   application:
     name: resources-service
@@ -14,12 +16,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
-server:
-  port: 8101
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/,
+      defaultZone: http://localhost:8761/eureka/
   
 
 
